@@ -4,32 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<script defer src="main.bc1a24e8b9ec557786d5.js"></script></head>
+<script defer src="main.d1d866ce7a0d44c49e11.js"></script></head>
 <body>
-    <header>
-        <a name="Главная"></a> 
+    <header id="main">
         <section class="navSection">
             <div class="container navSection__container">
                 <nav class="navSection__nav">
                     <ul class="navSection__list">
                         <li class="navSection__item">
-                            <a href="#Главная">
+                            <a href="#main">
                                 <p class="navSection__btn">Главная</p>
                             </a>
                         </li>
-                        <li class="navSection__item">
-                            <a href="#Каталог">
+                        <li class="navSection__item navSection__item_catalog">
+                            <a href="#catalog">
                                 <p class="navSection__btn">Каталог</p>
                             </a>
+                            <ul class="navSection__innerList">
+                                <li class="navSection__innerItem">
+                                    <a href="#textile">
+                                        <p class="navSection__secondName">Ткани</p>
+                                    </a>
+                                </li>
+                                <li class="navSection__innerItem">
+                                    <a href="#buttons">
+                                        <p class="navSection__secondName">Фурнитура</p>    
+                                    </a>
+                                </li>
+                                <li class="navSection__innerItem">
+                                    <a href="#accessories">
+                                        <p class="navSection__secondName">Карнизы и аксессуары</p>
+                                    </a>
+                                </li>
+                                <li class="navSection__innerItem">
+                                    <a href="#products">
+                                        <p class="navSection__secondName">Готовые изделия</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            
                         </li>
                         <li class="navSection__item">
-                            <a href="#Схема работы">
-                                <p class="navSection__btn">Схема работы</p>
+                            <a href="#sewing">
+                                <p class="navSection__btn">Пошив</p>
                             </a>
                         </li>
                         <li class="navSection__item">
-                            <a href="#Оставить заявку">
+                            <a href="#contacts">
                                 <p class="navSection__btn">Оставить заявку</p>
+                            </a>
+                        </li>
+                        <li class="navSection__item">
+                            <a href="#constacts">
+                                <p class="navSection__btn">Контакты</p>
                             </a>
                         </li>
                     </ul>
@@ -41,8 +68,7 @@
                 <div class="header__left">
                     <img class="header__logo" src="icons/logo.4b81ca2d68e187085433.svg" alt="Logo" width="60" height="60">
                     <div class="header__sloganBlock">
-                        <h1 class="header__heading">Книга мастеров</h1>
-                        <p class="header__slogan">Лучшие ткани на рынке!</p>                
+                        <h1 class="header__heading">Книга мастеров</h1>        
                     </div>
                 </div>
                 <div class="header__right">
@@ -58,7 +84,7 @@
                         <img class="header__icon" src="icons/instagram.f9bf690924574004e8b4.svg" alt="VK" width="36" height="36">
                         <img class="header__icon" src="icons/vk.738fd80f92fe53f1152b.svg" alt="VK" width="36" height="36">    
                     </div>
-                    
+                    <img class="header__icon" src="icons/chest.65d3b8b6a0b1d25612c2.svg" alt="Logo" width="80" height="80">
                 </div>
             </div>
         </section>
@@ -67,8 +93,8 @@
     <main>
         <section class="first">
             <div class="container first__container">
-                <h2 class="first__title">Оптовая продажа тканей для пошива одежды</h2> 
-                <p class="first__subtitle">У нас более 2 млн метров всегда в наличии на складе</p>
+                <h2 class="first__title">Продажа материалов для пошива одежды</h2> 
+                <p class="first__subtitle">Ткани, фурнитура, аксессуары, шторы/карнизы, товары для рукоделия, послельные принадлежности</p>
                 <div class="first__btnsBlock">
                     <button class="first__btn first__btn_top">Запросить оптовые цены</button>
                     <button class="first__btn first__btn_bottom">Получить коммерческое предложение</button>
@@ -77,52 +103,55 @@
             <div></div>
             <div></div>
         </section>
-        <section class="advantages">
-            <div class="container advantages__container">
-                <h3 class="heading advantages__heading">Преимущества для клиента</h3>
-                <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Лучшие цены, благодаря прямым поставкам</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Надежность - 20 лет на рынке</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Регулярное обновление ассортимента</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Более 2 000 000 метров в наличии</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Индивидуальный подход к каждому клиенту</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Выгодные условия сотрудничества</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Доставка по всей России</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Акции, скидки, распродажи</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Высокое качество от мировых производителей</p>
-                    </li>
-                </ul>
-                <a name="Каталог"></a> 
+        <section class="section-swiper">
+            <div class="container section-swiper__container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide section-swiper__slide section-swiper__slide_first">
+                        <h3 class="section-swiper__title">Ткани</h3>
+                        <p class="section-swiper__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae vero, quidem id culpa cum ad nihil quis iusto vitae adipisci reiciendis doloremque placeat dicta odit eius officia nobis distinctio.</p>
+                        <a class="section-swiper__link" href="#textile">
+                            <p class="section-swiper__btn">Смотреть</p>
+                        </a>
+                      </div>
+                      <div class="swiper-slide section-swiper__slide section-swiper__slide_second">
+                        <h3 class="section-swiper__title">Фурнитура</h3>
+                        <p class="section-swiper__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatum repellat labore eos! Excepturi laborum voluptates earum omnis non, officiis porro. Facere unde culpa labore tempora sit minus officia aperiam?</p>
+                        <a class="section-swiper__link" href="#buttons">
+                            <p class="section-swiper__btn">Смотреть</p>
+                        </a>
+                      </div>
+                      <div class="swiper-slide section-swiper__slide section-swiper__slide_third">
+                        <h3 class="section-swiper__title">Карнизы и аксессура</h3>
+                        <p class="section-swiper__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus veniam provident ut a temporibus dolorum blanditiis praesentium. Magnam suscipit quisquam hic officiis, aut doloremque, eum ab provident ipsam eligendi molestias.</p>
+                        <a class="section-swiper__link" href="#accessories">
+                            <p class="section-swiper__btn">Смотреть</p>
+                        </a>
+                      </div>
+                      <div class="swiper-slide section-swiper__slide section-swiper__slide_fourth">
+                        <h3 class="section-swiper__title">Готовые изделия</h3>
+                        <p class="section-swiper__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt magnam temporibus, eligendi quia aut aperiam reprehenderit laudantium illo dolor atque necessitatibus consequatur dolores cum optio excepturi impedit. Maxime, perferendis!</p>
+                        <a class="section-swiper__link" href="#products">
+                            <p class="section-swiper__btn">Смотреть</p>
+                        </a>
+                      </div>
+                      <div class="swiper-slide section-swiper__slide section-swiper__slide_fifth">
+                        <h3 class="section-swiper__title">Пошив изделий</h3>
+                        <p class="section-swiper__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quibusdam laudantium nesciunt, repellendus minus dolorem et sapiente animi. Nihil, eveniet ducimus? At doloremque dolorum, commodi nostrum officiis fugiat vitae accusamus.</p>
+                        <a class="section-swiper__link" href="#sewing">
+                            <p class="section-swiper__btn">Смотреть</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                  </div>
             </div>
-        </section>
-        <section class="assortment">
-            <div class="container assortment__container">
+          </section>
+        <section class="assortment" id="catalog">
+            <div class="container assortment__container" id="textile">
                 <h3 class="heading assortment__heading">У нас широкий ассортимент тканей</h3>
                 <ul class="assortment__list">
                     <li class="assortment__item">
@@ -209,58 +238,366 @@
                             <p class="assortment__text">Запросить прайс</p>
                         </a>
                     </li>
+                </ul>
+            </div>
+        </section>
+        <section class="assortment">
+            <div class="container assortment__container" id="buttons">
+                <h3 class="heading assortment__heading">Фурнитура</h3>
+                <ul class="assortment__list">
                     <li class="assortment__item">
                         <div class="assortment__img">X</div>
-                        <h4 class="assortment__title">Флис</h4>
+                        <h4 class="assortment__title">Атласные ткани</h4>
                         <a href="" class="assortment__link">
                             <p class="assortment__text">Запросить прайс</p>
                         </a>
                     </li>
                     <li class="assortment__item">
                         <div class="assortment__img">X</div>
-                        <h4 class="assortment__title">Бенгалин</h4>
+                        <h4 class="assortment__title">Замша</h4>
                         <a href="" class="assortment__link">
                             <p class="assortment__text">Запросить прайс</p>
                         </a>
                     </li>
                     <li class="assortment__item">
                         <div class="assortment__img">X</div>
-                        <h4 class="assortment__title">Подкладочные ткани</h4>
+                        <h4 class="assortment__title">Искусственный мех</h4>
                         <a href="" class="assortment__link">
                             <p class="assortment__text">Запросить прайс</p>
                         </a>
                     </li>
                     <li class="assortment__item">
                         <div class="assortment__img">X</div>
-                        <h4 class="assortment__title">Блузочно-рубашечные ткани</h4>
+                        <h4 class="assortment__title">Искусственная кожа</h4>
                         <a href="" class="assortment__link">
                             <p class="assortment__text">Запросить прайс</p>
                         </a>
                     </li>
                     <li class="assortment__item">
                         <div class="assortment__img">X</div>
-                        <h4 class="assortment__title">Велюр</h4>
+                        <h4 class="assortment__title">Костюмные ткани</h4>
                         <a href="" class="assortment__link">
                             <p class="assortment__text">Запросить прайс</p>
                         </a>
                     </li>
                     <li class="assortment__item">
                         <div class="assortment__img">X</div>
-                        <h4 class="assortment__title">Вискоза</h4>
+                        <h4 class="assortment__title">Органза</h4>
                         <a href="" class="assortment__link">
                             <p class="assortment__text">Запросить прайс</p>
                         </a>
                     </li>
                     <li class="assortment__item">
                         <div class="assortment__img">X</div>
-                        <h4 class="assortment__title">Гипюровая ткань</h4>
+                        <h4 class="assortment__title">Пальтовые ткани</h4>
                         <a href="" class="assortment__link">
                             <p class="assortment__text">Запросить прайс</p>
                         </a>
                     </li>
                     <li class="assortment__item">
                         <div class="assortment__img">X</div>
-                        <h4 class="assortment__title">Джинс</h4>
+                        <h4 class="assortment__title">Плащевые ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Сетка</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Тафта</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Трикотаж</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Домашний текстиль</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="assortment">
+            <div class="container assortment__container" id="accessories">
+                <h3 class="heading assortment__heading">Карнизы и аксессуары</h3>
+                <ul class="assortment__list">
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Атласные ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Замша</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Искусственный мех</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Искусственная кожа</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Костюмные ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Органза</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Пальтовые ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Плащевые ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Сетка</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Тафта</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Трикотаж</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Домашний текстиль</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="assortment">
+            <div class="container assortment__container" id="products">
+                <h3 class="heading assortment__heading">Готовые изделия</h3>
+                <ul class="assortment__list">
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Атласные ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Замша</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Искусственный мех</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Искусственная кожа</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Костюмные ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Органза</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Пальтовые ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Плащевые ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Сетка</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Тафта</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Трикотаж</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Домашний текстиль</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="assortment">
+            <div class="container assortment__container" id="sewing">
+                <h3 class="heading assortment__heading">Пошив изделий</h3>
+                <ul class="assortment__list">
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Атласные ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Замша</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Искусственный мех</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Искусственная кожа</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Костюмные ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Органза</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Пальтовые ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Плащевые ткани</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Сетка</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Тафта</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Трикотаж</h4>
+                        <a href="" class="assortment__link">
+                            <p class="assortment__text">Запросить прайс</p>
+                        </a>
+                    </li>
+                    <li class="assortment__item">
+                        <div class="assortment__img">X</div>
+                        <h4 class="assortment__title">Домашний текстиль</h4>
                         <a href="" class="assortment__link">
                             <p class="assortment__text">Запросить прайс</p>
                         </a>
@@ -269,16 +606,11 @@
             </div>
         </section>
         <section class="commerce">
-            <a name="Оставить заявку"></a> 
-            <div class="container commerce__container">
-                <h2 class="heading commerce__heading">Почему стоит выбрать ткани "ЕжикTEXT"?</h2>
-                <p class="commerce__description">
-                    <span class="commerce__text">Предприятие «БестТекс» реализует ткани оптом уже более 20 лет, предоставляя своим клиентам только лучшее.
-                        Мы постоянно растем, расширяя ассортимент, а также совершенствуемся в удовлетворении потребностей каждого покупателя, предлагая на выбор только те ткани, в качестве которых мы уверены на все 100%. Наши поставщики - общепризнанные лидеры в данной сфере. </span>
-                    <span class="commerce__text commerce__text_green">Это Китай, Тайвань, Корея, Индонезия, Турция и страны Европы.</span>
-                </p>
+            <div class="container commerce__container" id="contacts">
+                <h2 class="heading commerce__heading">Почему стоит выбрать ткани "Книга мастеров"?</h2>
+                <p class="commerce__description">Имеем большой опыт в розничной торговле тканями, фурнитурой и сопутствующими товарами. Воплотим любые Ваши идеи в жизнь, поможем определиться с выбором материала, изготовим с учетом Ваших потребностей и вкуса
                 <div class="commerce__requestBlock">
-                    <h3 class="commerce__title">ЗАПРОСИТЬ ПРАЙС НА ОПТОВЫЕ ЦЕНЫ</h3>
+                    <h3 class="commerce__title">ЗАПРОСИТЬ ПРАЙС</h3>
                     <h4 class="commerce__title commerce__title_second">на электронную почту</h3>
                     <div class="commerce__inputsBlock">
                         <input type="text" class="input commerce__input" placeholder="Введите ваше имя">
@@ -309,27 +641,7 @@
                 <ul class="advantages__list">
                     <li class="advantages__item">
                         <div class="icon advantages__icon">X</div>
-                        <p>Удобный онлайн-каталог, в котором Вы легко найдете необходимый товар</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Невероятно широкий ассортимент тканей от производителя</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>В ассортименте пледы и покрывала собственного производства</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Постоянное обновление товарного ряда</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Приемлемые цены, которые Вас приятно удивят</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="icon advantages__icon">X</div>
-                        <p>Безупречное качество продукции</p>
+                        <p>Приемлимые цены, которые Вас приятно удивят</p>
                     </li>
                     <li class="advantages__item">
                         <div class="icon advantages__icon">X</div>
@@ -337,32 +649,33 @@
                     </li>
                     <li class="advantages__item">
                         <div class="icon advantages__icon">X</div>
-                        <p>Регулярные акционные предложения и скидки</p>
+                        <p>Пошив штор и домашних и интерьерных изделий</p>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="icon advantages__icon">X</div>
+                        <p>Монтаж карнизов</p>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="icon advantages__icon">X</div>
+                        <p>Замеры и подбор тканей</p>
                     </li>
                     <li class="advantages__item">
                         <div class="icon advantages__icon">X</div>
                         <p>Индивидуальные консультации от наших специалистов</p>
                     </li>
+                    <li class="advantages__item">
+                        <div class="icon advantages__icon">X</div>
+                        <p>Развеска штор</p>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="icon advantages__icon">X</div>
+                        <p>Выезд на объект с образцами тканей</p>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="icon advantages__icon">X</div>
+                        <p>Доставка по г. Полевскому. Доставка до ТК от 10000р. бесплатно</p>
+                    </li>
                 </ul>
-            </div>
-        </section>
-        <section class="commerce">
-            <div class="container commerce__container">
-                <h2 class="heading commerce__heading">Оптовая продажа тканей для пошива одежды</h2>
-                <p class="commerce__description">
-                    <span class="commerce__text">Мы заботимся о том, чтобы Вы выбрали ту ткань, которая Вам необходима, поэтому высылаем понравившиеся образцы. </span>
-                    <span class="commerce__text commerce__text_green">Вы можете приобрести нашу продукцию мелким и крупным оптом </span>
-                    <span class="commerce__text">в режиме онлайн с доставкой, доставка по всей России. Если возникли какие-то вопросы, то Вы можете или самостоятельно связаться с нами по номерам телефонов или же оставить заявку, чтобы наши менеджеры смогли обсудить с Вами все нюансы.</span>
-                </p>
-                <div class="commerce__requestBlock">
-                    <h3 class="commerce__title">ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</h3>
-                    <h4 class="commerce__title commerce__title_second">на электронную почту</h3>
-                    <div class="commerce__inputsBlock">
-                        <input type="text" class="input commerce__input" placeholder="Введите ваше имя">
-                        <input type="text" class="input commerce__input" placeholder="Введите вашу электронную почту">
-                    </div>
-                    <button class="button commerce__button">Получить коммерческое предложение</button>
-                </div>
             </div>
         </section>
     </main>
