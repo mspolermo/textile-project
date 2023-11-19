@@ -11,9 +11,6 @@
     line-height: 18px;
     color: var(--text-color-1);
 }
-main {
-    position: relative;
-}
 
 .container {
     max-width: 1920px;
@@ -116,6 +113,8 @@ main {
     }
     &__left {
         display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         &:active {
             transform: translateX(-2px);
@@ -123,12 +122,6 @@ main {
     }
     &__logo {
         margin-right: 8px;
-    }
-    &__sloganBlock {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     &__heading {
         text-transform: uppercase;
@@ -174,9 +167,6 @@ main {
     }
 }
 
-
-
-
 .first {
     padding-top: 180px;
     padding-bottom: 145px;
@@ -202,6 +192,8 @@ main {
         justify-content: space-between;
     }
     &__btn {
+        display: block;
+        text-align: center;
         width: 95%;
         padding: 20px 40px;
         border-radius: 40px;
@@ -216,6 +208,11 @@ main {
         &_bottom{
             background-color: orange;
 
+        }
+        &:hover {
+            color: black;
+            cursor: pointer;
+            outline: 1px solid var(--border-color);
         }
     }
 }
@@ -300,6 +297,13 @@ main {
     }
     &__item {
         background-color: rgb(211, 201, 201);
+        
+        &:hover {
+            cursor: default;
+            .assortment__text {
+                text-decoration: underline !important;
+            }
+        }
     }
     &__img {
         padding: 100px;
@@ -392,7 +396,93 @@ main {
     }
 }
 
-.footer {
-    padding: 100px 0;
-    background-color: darkgreen;
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+    &__window {
+        background-color: #fff;
+        padding: 20px;
+        width: 500px;
+        margin: 100px auto;
+        border-radius: 8px;
+        text-align: center;
+    }
+  
+    &__heading {
+        padding: 20px;
+        font-size: 26px;
+        font-weight: 700;
+    }
+  
+    &__text {
+        margin-bottom: 20px;
+    }
+    &__btn {
+        background-color: darkgreen;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 }
+
+.footer {
+background-color: var(--bg-color-1);
+padding: 30px 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__row {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+        gap: 10px;    
+        &_left {
+
+            max-width: 400px;
+            align-items: start;
+        }
+    }
+    
+    &__logoBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+    }
+    
+    &__logo {
+        margin-right: 8px;
+    }
+    
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    &__text {
+        &_last {
+            text-align: right;
+        }
+    }
+    
+    &__title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+    

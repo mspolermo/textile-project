@@ -25,7 +25,40 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+//скролл
+
 const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 800, // Скорость прокрутки
     speedAsDuration: true, // Использовать скорость как длительность прокрутки
+  });
+
+
+  //модалка
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('myModal');
+  
+    openModalBtn.addEventListener('click', function () {
+      modal.style.display = 'block';
+    });
+  
+    closeModalBtn.addEventListener('click', function () {
+      modal.style.display = 'none';
+    });
+  
+    // Закрытие модального окна при клике вне окна
+    window.addEventListener('click', function (event) {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  
+    // Закрытие модального окна при нажатии на клавишу Esc
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        modal.style.display = 'none';
+      }
+    });
   });
