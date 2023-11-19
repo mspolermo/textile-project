@@ -1,0 +1,398 @@
+@import 'fonts.scss'; //Шрифты
+@import 'nullstyle.scss'; // Нормализация
+@import 'variables.scss'; // Переменные
+@import 'swiper.scss'; // Свайпер
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-color-1);
+}
+main {
+    position: relative;
+}
+
+.container {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.heading {
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 700;
+    text-align: center;
+}
+.icon {
+    padding: 20px;
+    background-color: green;
+    border-radius: 100%;
+}
+.input {
+    padding: 20px;
+    display: block;
+    min-width: 400px;
+    border: 1px solid green;
+    border-radius: 50px;
+}
+
+.button {
+    padding: 20px;
+    background-color: green;
+    border-radius: 50px;
+    min-width: 400px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.navSection {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--bg-color-1);
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    z-index: var(--z-fixed-header);
+    &__container {
+    }
+    &__nav {
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &__item {
+        &_catalog{
+            position: relative;
+            &:hover {
+                .navSection__innerList {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__btn {
+        font-size: 16px;
+        color: var(--text-color-1);
+        &:hover {
+            transform: scale(1.2);
+        }
+        &:active {
+            transform: translateY(-1px);
+        }
+    }
+    &__innerList {
+        display: none;
+        position: absolute;
+        border: 1px solid var(--border-color);
+        background-color: gray;
+    }
+    &__innerItem {
+        padding: 10px;
+    }
+    &__secondName {
+        color: var(--text-color-1);
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.header {
+    padding: var(--height-headerNav) 0 20px;
+    background-color: var(--bg-color-1);
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        cursor: pointer;
+        &:active {
+            transform: translateX(-2px);
+        }
+    }
+    &__logo {
+        margin-right: 8px;
+    }
+    &__sloganBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__text {
+        font-size: 16px;
+        color: var(--text-color-2);
+        cursor: default;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--text-color-3);
+    }
+    &__right-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+    }
+    &__iconsBlock {
+        margin-bottom: 4px;
+        display: flex;
+        gap: 14px;
+    }
+    &__icon {
+        cursor: pointer;
+        &:active {
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+
+
+.first {
+    padding-top: 180px;
+    padding-bottom: 145px;
+    background-color: green;
+    &__title {
+        margin-bottom: 10px;
+        font-size: 42px;
+        line-height: 65px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+    &__subtitle{
+        margin-bottom: 40px;
+        color: white;
+        font-size: 26px;
+        line-height: 34px;
+        text-align: center;
+    }
+    &__btnsBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__btn {
+        width: 95%;
+        padding: 20px 40px;
+        border-radius: 40px;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 20px;
+        color: gray;
+        &_top{
+            background-color: lightgreen;
+            margin-bottom: 20px;
+        }
+        &_bottom{
+            background-color: orange;
+
+        }
+    }
+}
+
+.section-swiper{
+    padding: 60px 0;
+    &__slide {
+        padding: 60px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        &_first {
+            background-color: gray;
+        }
+        &_second {
+            background-color: yellow;
+        }
+        &_third {
+            background-color: red;
+        }
+        &_fourth {
+            background-color: blue;
+        }
+        &_fifth {
+            background-color: aqua;
+        }
+    }
+    &__title {
+        text-align: center;
+        margin: 40px 0;
+        font-size: 34px;
+        font-weight: 700;
+    }
+    &__desc {
+        margin-left: auto;
+        padding-bottom: 140px;
+
+        text-align: right;
+        font-size: 22px;
+    }
+    &__link {
+        color: var(--text-color-1);
+        border: 1px solid var(--border-color);
+        align-self: flex-start;
+        padding: 20px;
+    }
+}
+
+.advantages {
+    margin-bottom: 60px;
+    &__heading {
+        margin-bottom: 20px;
+        padding-top: 40px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+    &__item {
+        margin: 10px 0px;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        margin-right: 20px;
+    }
+}
+
+.assortment {
+    &__heading {
+        padding-top: var(--height-headerNav) ;
+        margin-bottom: 40px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 40px;
+    }
+    &__item {
+        background-color: rgb(211, 201, 201);
+    }
+    &__img {
+        padding: 100px;
+        background-color: gray;
+    }
+    &__title {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 700;
+    }
+    &__link {
+        text-decoration: none;
+        color: green;
+    }
+    &__text {
+        padding: 0 10px 20px;
+    }
+}
+
+.commerce {
+    margin-top: 60px;
+    background-color: gray;
+    &__container {
+        padding: 60px 0;
+    }
+    &__heading {
+        padding-bottom: 40px;
+    }
+    &__description {
+        margin-bottom: 60px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+                font-size: 15px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #d0d9de;
+    }
+    &__requestBlock{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 35px;
+        color: #69a042;
+        font-weight: 700;
+        text-align: center;
+        &_second {
+            color: #443e3e;;
+        }
+    }
+    &__inputsBlock{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input {
+        margin-bottom: 20px;
+    }
+}
+
+.imageSection {
+    margin-bottom: 40px;
+    &__heading {
+        padding: 40px 0;
+        max-width: 800px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    &__img {
+        padding: 140px;
+        background-color: gray;
+    }
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: darkgreen;
+}

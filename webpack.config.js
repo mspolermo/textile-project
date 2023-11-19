@@ -1,7 +1,7 @@
-const path = require('path')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const HTMLWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     mode: "development",
@@ -12,11 +12,16 @@ module.exports = {
         assetModuleFilename: path.join('images', '[name].[contenthash][ext]')
     },
     devServer: {
-        port: 3000
+        static: {
+            directory: path.join(__dirname, 'src'),
+        },
+        port: 3000,
+        hot: true,
     },
     plugins: [
         new HtmlWebpackPlugin({template: "./src/index.html"}),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ],
     module: {
         rules: [
